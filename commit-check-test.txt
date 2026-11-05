@@ -1,1 +1,2 @@
 Test GitHub Actions commit validation.
+This is an invalid commit message test.
