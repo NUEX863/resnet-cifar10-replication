@@ -19,11 +19,11 @@ jobs:
           script: |
             // Replace with your actual group members
             const members = {
-              "github_user_1": {
+              "NUEX863": {
                 id: "2260031698",
                 name: "周子旺"
               },
-              "github_user_2": {
+              "hanwujee1-ship-it": {
                 id: "2260031896",
                 name: "李霄汉"
               }
