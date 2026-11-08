@@ -1,0 +1,14 @@
+.venv/
+/scripts/check_environment.py
+__pycache__/
+*.py[cod]
+.env
+data/
+cifar-10-batches-py/
+cifar-10-python.tar.gz
+cifar10_train_mean.npy
+checkpoints/
+*.pt
+*.pth
+*.pth.tar
+ResNet五周提交计划.md
