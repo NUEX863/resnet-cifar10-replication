@@ -1,0 +1,16 @@
+{
+  "step": 64000,
+  "final": {
+    "epoch": 164,
+    "step": 64000,
+    "lr": 0.0010000000000000002,
+    "online_train_error": 1.2347846441947565,
+    "online_train_loss": 0.03911474849400896,
+    "train_error": 0.474,
+    "train_loss": 0.017750465087890625,
+    "test_error": 9.38,
+    "test_loss": 0.403365234375,
+    "seconds": 36.45377409999492,
+    "peak_gpu_mb": 267.66650390625
+  }
+}
