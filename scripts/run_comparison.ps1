@@ -5,6 +5,7 @@ param(
 )
 $ErrorActionPreference = 'Stop'
 Set-Location (Split-Path $PSScriptRoot -Parent)
+$env:MPLCONFIGDIR = Join-Path (Get-Location) 'checkpoints/matplotlib-cache'
 $experimentBranch = (git branch --show-current).Trim()
 if ($experimentBranch -eq 'main') { throw 'Use an experiment branch, not main.' }
 $resultDir = 'results/seed1'
