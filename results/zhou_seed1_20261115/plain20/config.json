@@ -1,0 +1,30 @@
+{
+  "seed": 1,
+  "steps": 64000,
+  "batch_size": 128,
+  "learning_rate": 0.1,
+  "milestones": [
+    32000,
+    48000
+  ],
+  "momentum": 0.9,
+  "weight_decay": 0.0001,
+  "precision": "FP32; TF32 disabled",
+  "deterministic": true,
+  "preprocessing": "training pixel mean in RGB 0..255; zero-pad 4, flip, random 32x32 crop",
+  "augmentation_backend": "batched tensors, independent CPU generator per model",
+  "evaluation": "full unaugmented 50000/10000 splits in eval mode",
+  "eval_batch_size": 256,
+  "data_dir": "D:\\02skills\\00master_lessons\\01MLTools\\final-pre\\uploadtogithub\\data",
+  "output": "D:\\02skills\\00master_lessons\\01MLTools\\final-pre\\uploadtogithub\\results\\zhou_seed1_20261115",
+  "mean_sha256": "491000eaf08bdc45c536a60ff72c621ae29fd5a178f9eac069bc88aff30b9aeb",
+  "model_sha256": "94db3bf5ad8f3dd4b41735789c3976da0f67b90ae6ba0bb149276c8542d69224",
+  "trainer_sha256": "2a560b77c2d91cf27046935786acfcca62a005fcf9feb5d3b2bb11a09d68eb35",
+  "torch": "2.10.0+cu128",
+  "torchvision": "0.25.0+cu128",
+  "numpy": "2.2.6",
+  "python": "3.11.17",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "model": "plain20"
+}
