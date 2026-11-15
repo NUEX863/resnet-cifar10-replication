@@ -1,0 +1,9 @@
+{
+  "complete": false,
+  "available_models": [
+    "plain20",
+    "plain56",
+    "resnet20",
+    "resnet56"
+  ]
+}
