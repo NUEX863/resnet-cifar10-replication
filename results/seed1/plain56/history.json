@@ -1,0 +1,15 @@
+[
+  {
+    "epoch": 1,
+    "step": 391,
+    "lr": 0.1,
+    "online_train_error": 80.02,
+    "online_train_loss": 2.129896875,
+    "train_error": 77.098,
+    "train_loss": 2.0441809375,
+    "test_error": 76.15,
+    "test_loss": 2.030815234375,
+    "seconds": 61.556203699990874,
+    "peak_gpu_mb": 603.43408203125
+  }
+]

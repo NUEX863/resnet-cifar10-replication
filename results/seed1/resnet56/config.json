@@ -1,0 +1,31 @@
+{
+  "model": "resnet56",
+  "seed": 1,
+  "steps": 64000,
+  "batch_size": 128,
+  "lr": 0.1,
+  "milestones": [
+    32000,
+    48000
+  ],
+  "momentum": 0.9,
+  "weight_decay": 0.0001,
+  "workers": 4,
+  "precision": "FP32; TF32 disabled",
+  "deterministic": true,
+  "preprocessing": "training pixel mean in RGB 0..255; zero pad 4, random flip/crop",
+  "data_dir": "D:\\codex\\datasets\\cifar10",
+  "train_size": 50000,
+  "test_size": 10000,
+  "model_sha256": "c08f8fc454de5709feb85c50f7e9cdd29b5b7e207b3426357d521189c1929e95",
+  "trainer_sha256": "9bc6d943dbb71d21a8199bc2e37decc5ff308f01d501b240a572503014a98c4a",
+  "data_code_sha256": "8478fb8cfe365ad59439ccc640c17a62d60599723141fb5e469e8869f0754755",
+  "mean_sha256": "491000eaf08bdc45c536a60ff72c621ae29fd5a178f9eac069bc88aff30b9aeb",
+  "torch": "2.10.0+cu128",
+  "torchvision": "0.25.0+cu128",
+  "numpy": "2.4.6",
+  "pillow": "13.0.0",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "commit": "ba7b0390d834e84f184105e5b1a82ef712a84e6c"
+}
