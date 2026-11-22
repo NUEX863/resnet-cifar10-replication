@@ -38,3 +38,12 @@ The following two graphs show the error rates of a regular network on the traini
 <img width="1728" height="1080" alt="05_depth56_train" src="https://github.com/user-attachments/assets/235c7624-d08b-4f5c-bf48-9fd7fc7c3eb5" />
 <img width="1728" height="1080" alt="06_depth56_test" src="https://github.com/user-attachments/assets/c73758d9-1810-45a1-a330-360705bee56a" />
 
+**16–22 November 2026**
+
+**周子旺 (Ziwang Zhou)**
+
+Implemented the ImageNet Plain-34 and ResNet-34 model definitions in `src/resnet_imagenet.py`, following the architecture in Table 1 and the Option A comparison in Figure 4 of the paper. Both models share a 7 × 7 convolutional stem, four stages containing 3, 4, 6 and 3 two-convolution blocks, global average pooling and a 1,000-class classifier. ResNet-34 adds parameter-free shortcuts using identity mapping and spatial subsampling with zero-padded channels at stage transitions. Added explicit weight initialization and a seeded model factory for matching the initial learned parameters of the Plain and ResNet models.
+
+**李霄汉 (Xiaohan Li)**
+
+Developed the structural checking script `scripts/check_imagenet34.py`. The script includes checks for the 34-layer count, stage layout, convolution settings, intermediate feature dimensions and classifier output shape. It also checks the identity and downsampling behavior of Option A shortcuts, residual addition, paired model initialization, batch-normalization initial states and preservation of the caller's CPU random-generator state. The checks use synthetic inputs and provide a CPU command-line entry point.
